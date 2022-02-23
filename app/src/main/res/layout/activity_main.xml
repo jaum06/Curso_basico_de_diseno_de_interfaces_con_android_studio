@@ -8,19 +8,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <include
+        layout="@layout/merge_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
-    <ImageView
-        android:id="@+id/ivLoginLogo"
-        android:layout_width="@dimen/width_logo"
-        android:layout_height="@dimen/height_logo"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/platzi_music"
-        android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints,ImageContrastCheck" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
         android:id="@+id/edLoginUsername"
@@ -28,7 +23,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:autofillHints=""
         android:drawableStart="@drawable/vector_person"
